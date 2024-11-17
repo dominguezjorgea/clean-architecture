@@ -1,6 +1,8 @@
 package com.itnovit.clean_architecture.entity;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -14,7 +16,8 @@ public class User {
 
     private String email;
 
-    @Column(name = "created_at", updatable = false)
+    @CreationTimestamp
+    @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
     // Parameterized constructor (used in mocking data)
