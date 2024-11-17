@@ -17,7 +17,17 @@ public class User {
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
-    // Getters and Setters
+    // Parameterized constructor (used in mocking data)
+    public User() {
+
+    }
+
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    // Getters and Setters (used by JPA and serialization)
     public Long getId() {
         return id;
     }
@@ -50,4 +60,3 @@ public class User {
         this.createdAt = createdAt;
     }
 }
-
