@@ -64,3 +64,11 @@ src/test/resources/application-test.properties
 /checkstyle-reports/
 /pmd-reports/
 /spotbugs-reports/
+
+
+# Maven Wrapper files
+mvnw
+mvnw.cmd
+
+# Help file
+HELP.md
