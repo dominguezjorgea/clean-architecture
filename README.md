@@ -1,6 +1,6 @@
 # What is Clean Architecture?
 
-# Clean Architecture is a set of design principles proposed by Robert C. Martin (Uncle Bob) that ensures:
+Clean Architecture is a set of design principles proposed by Robert C. Martin (Uncle Bob) that ensures:
 
     Independence of frameworks.
     Testability of business rules.
